@@ -1,15 +1,18 @@
 /*** Constructor ***/
-var baseMaps = {};
 var layers = [];
-var map;
 var countriesLayer;
+var weatherControl;
+var iconLayerControl;
 
-/*** Layers ***/
+var map = L.map('map', { zoomControl: false }).setView([40.1670987,29.1081638], 10);
+
+/*** Tile Layers ***/
 for (var providerId in providers) {
     layers.push(providers[providerId]);
 }
-// Add layers all
-L.control.iconLayers(layers).addTo(map);
 
-map = L.map('map').setView([40.198868, 29.057695], 5);
 countriesLayer = L.geoJson(countries).addTo(map);
+
+/*** Controls ***/
+iconLayerControl = L.control.iconLayers(layers).addTo(map);
+weatherControl = L.control.weather(weatherOptions).addTo(map);
