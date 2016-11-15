@@ -7,7 +7,11 @@ var locateControl;
 var logoControl;
 var measureControl;
 
-var map = L.map('map', { zoomControl: false }).setView([40.1670987,29.1081638], 4);
+var map = L.map('map', {
+    zoomControl: false,
+    visualClick: true,
+    visualClickEvents: 'dblclick'
+}).setView([40.1670987, 29.1081638], 4);
 
 /*** Tile Layers ***/
 for (var providerId in providers) {
