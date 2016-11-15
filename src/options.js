@@ -1,6 +1,7 @@
 var weatherOptions;
 var pulsingIconOptions;
 var locateOptions;
+var logoOptions;
 
 /*** Weather ***/
 weatherOptions = {
@@ -30,4 +31,14 @@ locateOptions = {
         popup: "Bu noktaya {distance} {unit} çapta uzaklıktasın!",
         outsideMapBoundsMsg: "Haritanın sınırlarının dışında görünüyorsun!"
     }
+};
+
+/*** Logo ***/
+logoOptions = {
+    position: 'topleft',
+    height: '50px',
+    width: '50px',
+    target: '_blank',
+    image: 'http://openweathermap.org/img/w/04d.png',
+    link: 'http://barisariburnu.github.io'
 };
