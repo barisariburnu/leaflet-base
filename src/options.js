@@ -2,6 +2,7 @@ var weatherOptions;
 var pulsingIconOptions;
 var locateOptions;
 var logoOptions;
+var measureOptions;
 
 /*** Weather ***/
 weatherOptions = {
@@ -41,4 +42,18 @@ logoOptions = {
     target: '_blank',
     image: 'http://openweathermap.org/img/w/04d.png',
     link: 'http://barisariburnu.github.io'
+};
+
+/*** Measure ***/
+measureOptions = {
+    position: 'topleft',
+    primaryLengthUnit: 'meters',
+    secondaryLengthUnit: 'kilometers',
+    primaryAreaUnit: 'sqmeters', secondaryAreaUnit: 'acres',
+    activeColor: '#ABE67E',
+    completedColor: '#C8F2BE',
+    popupOptions: {className: 'leaflet-measure-resultpopup', autoPanPadding: [10, 10]},
+    localization: 'tr',
+    decPoint: '.',
+    thousandsSep: ','
 };
