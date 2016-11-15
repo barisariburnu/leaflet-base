@@ -1,4 +1,6 @@
-#map { 
+@media print{@page {size: landscape}}
+
+#map {
 	position: absolute;
     width: 100%;
     top: 0;

@@ -6,6 +6,7 @@ var iconLayerControl;
 var locateControl;
 var logoControl;
 var measureControl;
+var printControl;
 
 var map = L.map('map', {
     zoomControl: false,
@@ -26,3 +27,4 @@ weatherControl = L.control.weather(weatherOptions).addTo(map);
 logoControl = L.control.logo(logoOptions).addTo(map);
 locateControl = L.control.locate(locateOptions).addTo(map);
 measureControl = L.control.measure(measureOptions).addTo(map);
+printControl = L.easyPrint(printOptions).addTo(map);

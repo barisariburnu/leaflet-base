@@ -3,6 +3,7 @@ var pulsingIconOptions;
 var locateOptions;
 var logoOptions;
 var measureOptions;
+var printOptions;
 
 /*** Weather ***/
 weatherOptions = {
@@ -56,4 +57,11 @@ measureOptions = {
     localization: 'tr',
     decPoint: '.',
     thousandsSep: ','
+};
+
+/*** Print ***/
+printOptions = {
+    title: 'Yazdır',
+    position: 'topleft',
+    elementsToHide: 'p, h2'
 };
